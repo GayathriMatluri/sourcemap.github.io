@@ -4,52 +4,32 @@
    <title>Sourcemap - Static Projects</title>
 </head>
 <body>
-  <script src="./js/errorcase.min.js"></script>
-  <script src="./js/case7withoutmap.min.js"></script>
-  <script src="./js/case8incorrectmaplocation.min.js"></script>
-  <script src="./js/case9withmap.min.js"></script>
-  
-  <script src="./js/case10.min.js"></script>
-  <script src="./js/case10nested.min.js"></script>
-  <script src="rum-script.js"></script>
-  <h1>Hello Sourcemap </h1>
+  <script src="./ReferenceError/ReferenceError.min.js"></script>
+  <script src="./TypeError/TypeError.min.js"></script>
+  <script src="./SyntaxError/SyntaxError.min.js"></script>
+  <script src="./URIError/URIError.min.js"></script>
+  <script src="./RangeError/RangeError.min.js"></script>
+  <script src="./EvalError/EvalError.min.js"></script>
+  <script src="./InternalError/InternalError.min.js"></script>
 
-  <h2>Test Case 1</h2>
+  <h1>Test Sourcemap</h1>
+
   <div>
     <!-- Errors for sourcemap testing -->
 
-    <button onclick="case1()">Case 1 Error</button>
+    <button onclick="ReferenceError()">ReferenceError</button>
+    <br>
+    <button onclick="TypeError()">TypeError</button>
+    <br>
+    <button onclick="RangeError()">RangeError</button>
+    <br>
+    <button onclick="URIError()">URIError</button>
+    <br>
+    <button onclick="EvalError()">EvalError</button>
+    <br>
+    <button onclick="InternalError()">InternalError</button>
+    <br>
     
-    <button onclick="case2()">Case 2 Error</button>
-
-    <button onclick="case3()">Case 3 Error</button>
-
-    <br>
-    <br>
-
-    <button onclick="case4()">Case 4 Error</button>
-
-    <button onclick="case5()">Case 5 Error</button>
-
-    <button onclick="case6()">Case 6 Error</button>
-
-    <br>
-    <br>
-
-    <button onclick="case7()">Case 7 Without Map</button>
-
-    <button onclick="case8()">Case 8 incorrect map loc</button>
-
-    <button onclick="case9()">Case 9 with map</button>
-
-    <br>
-    <br>
-
-    <button onclick="case10()">Case 10 nested functions</button>
-
-    <br>
-
-    <!-- End of Errors for sourcemap testing -->
 </div>
   
 </body>
